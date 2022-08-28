@@ -1,0 +1,12 @@
+[workspace]
+members = ["macros", "crypto", "crypto/key"]
+resolver = "2"
+
+[package]
+name = "example"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+crypto = { path = "./crypto" }
+macros = { path = "./macros" }
